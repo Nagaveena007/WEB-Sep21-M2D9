@@ -1,0 +1,120 @@
+ body {
+    background: linear-gradient(45deg, rgb(216, 35, 96) 0%, rgb(171, 187, 30) 100%);
+    background-attachment: fixed;
+    color: white;
+}
+
+section {
+    min-height: 93vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* EXERCISE 1
+For all Albums we'd like to have a consistent style.
+Create a class for:
+- The album container
+- The album cover
+- The album title
+- The album group / singer / dj
+- The album genre
+- The album duration
+- etc
+*/
+
+.album-container {
+    text-align: center;
+    padding-bottom: 1em;
+    margin: 1em;
+}
+
+.album-container img {
+    width: 100%;
+}
+
+.album-artist:after {
+    content: ' • '
+}
+
+.album-title {
+    margin-top: 0.50em;
+    margin-bottom: 0.25em;
+    font-size: 1.3em
+}
+
+.album-genre {
+
+}
+
+/* Ex 2 */
+
+nav  {
+    background-color: rgba(26, 16, 34, 0.72);
+    height: 7vh;
+}
+
+/* EX 6 */
+
+.carousel-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: lowercase;
+    color: #d1d1d1;
+    mix-blend-mode: color-burn;
+    font-weight: 900;
+}
+
+/* Ex 7 */
+.album-tapestry {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.squared {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 10px auto;
+}
+
+.play-btn {
+background-color: black;
+border: 2px solid white;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+position: relative;
+transform: translateX(-60px);
+transition: transform 0.3s ease 0.4s;
+}
+.badge {
+position: absolute;
+left: 0;
+top: 0;
+}
+#jumbotronFade{
+margin-top: 25px;
+font-size: 21px;
+text-align: center;
+
+-webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+-moz-animation: fadein 2s; /* Firefox < 16 */
+-ms-animation: fadein 2s; /* Internet Explorer */
+ -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
+}
+
+@-webkit-keyframes fadein {
+from { opacity: 0; }
+to   { opacity: 1; }
+}
+
+/* e.target.parentNode.parentNode.remove() works, thank you, Lidia!
+ */
+
+
+ 
