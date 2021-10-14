@@ -5,109 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- IMPORT ALL THE BOOTSTRAP RELATED CSS & SCRIPTS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
     <style>
 
         /* Miscellaneous */
-
-        body {
-            background: linear-gradient(45deg, rgba(37,0,64,1) 0%, rgba(67,88,116,1) 100%);
-            background-attachment: fixed;
-            color: white;
-        }
-
-        section {
-            min-height: 93vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        /* EXERCISE 1
-        For all Albums we'd like to have a consistent style.
-        Create a class for:
-        - The album container
-        - The album cover
-        - The album title
-        - The album group / singer / dj
-        - The album genre
-        - The album duration
-        - etc
-        */
-
-        .album-container {
-            text-align: center;
-            padding-bottom: 1em;
-            margin: 1em;
-        }
-
-        .album-container img {
-            width: 100%;
-        }
-
-        .album-artist:after {
-            content: ' • '
-        }
-
-        .album-title {
-            margin-top: 0.50em;
-            margin-bottom: 0.25em;
-            font-size: 1.3em
-        }
-
-        .album-genre {
-
-        }
-
-        /* Ex 2 */
-
-        nav  {
-            background-color: rgba(26, 16, 34, 0.72);
-            height: 7vh;
-        }
-        
-        /* EX 6 */
-        
-        .carousel-title {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-transform: lowercase;
-            color: #d1d1d1;
-            mix-blend-mode: color-burn;
-            font-weight: 900;
-        }
-        
-        /* Ex 7 */
-        .album-tapestry {
-            display: flex;
-            flex-wrap: wrap;
-            
-        }
-        
-        .squared {
-            width: 250px;
-            height: 250px;
-            object-fit: cover;
-            margin: 10px auto;
-        }
-        
-        .play-btn {
-    background-color: black;
-    border: 2px solid white;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    position: relative;
-    transform: translateX(-60px);
-    transition: transform 0.3s ease 0.4s;
-  }
-  .badge {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
 
 
     </style>
@@ -151,7 +52,7 @@ This navigation bar must be linked to every section in your page
         Create a Jumbotron section with a quick explanation / image of the website.
         Make it appear with a fade-in animation effect when the page loads.
     -->
-    <div class="w3-animate-opacity">
+    <div id="jumbotronFade">
           <div class="jumbotron jumbotron-fluid py-5" style="background-color: rgba(26, 16, 34, 0.72); ">
             <div class="container">
               <h1 class="display-4">Music Album</h1>
